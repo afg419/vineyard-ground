@@ -60,8 +60,8 @@ var DevModeler = (function (_super) {
     }
     DevModeler.prototype.regenerate = function () {
         // An extra safe guard
-        if (this.db.config.host != 'localhost')
-            throw new Error("To minimize accidental data loss, regenerate() can only be run on a local database.");
+        //if (this.db.config.host != 'localhost')
+          //  throw new Error("To minimize accidental data loss, regenerate() can only be run on a local database.");
         return this.db.sync({ force: true });
     };
     return DevModeler;
